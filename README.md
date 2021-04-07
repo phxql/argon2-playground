@@ -7,8 +7,11 @@ Despite using Spring Security Crypto, the dependencies of this approach are ligh
 ```
 de.mkammerer.argon2-playground:argon2-playground:jar:1.0-SNAPSHOT
 +- org.springframework.security:spring-security-crypto:jar:5.4.5:compile
-+- commons-logging:commons-logging:jar:1.2:runtime
-\- org.bouncycastle:bcprov-jdk15on:jar:1.68:runtime
++- org.bouncycastle:bcprov-jdk15on:jar:1.68:runtime
++- ch.qos.logback:logback-classic:jar:1.2.3:runtime
+|  +- ch.qos.logback:logback-core:jar:1.2.3:runtime
+|  \- org.slf4j:slf4j-api:jar:1.7.25:runtime
+\- org.slf4j:jcl-over-slf4j:jar:1.7.30:runtime
 ```
 
 ## License
