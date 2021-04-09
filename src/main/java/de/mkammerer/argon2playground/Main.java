@@ -6,10 +6,12 @@ import java.time.Duration;
 
 public class Main {
     public static void main(String[] args) {
-        int saltLength = 128 / 8;
-        int hashLength = 256 / 8;
+        // For these parameters see the whitepaper (https://github.com/P-H-C/phc-winner-argon2/blob/master/argon2-specs.pdf), Section 9
+
+        int saltLength = 128 / 8; // 128 bits
+        int hashLength = 256 / 8; // 256 bits
         int parallelism = 1;
-        int memoryInKb = 10 * 1024;
+        int memoryInKb = 10 * 1024; // 10 MB
         int iterations = 10;
         Argon2PasswordEncoder passwordEncoder = new Argon2PasswordEncoder(saltLength, hashLength, parallelism, memoryInKb, iterations);
 
