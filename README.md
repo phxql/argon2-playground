@@ -1,8 +1,10 @@
 # Argon2 Playground
 
-Uses Spring Security Crypto and BouncyCastle to do Argon2 hashing on the JVM without the need for native libraries.
+Uses Spring Security Crypto and BouncyCastle to do Argon2 password hashing on the JVM without the need for native
+libraries.
 
-Despite using Spring Security Crypto, the dependencies of this approach are lightweight:
+Despite using Spring Security Crypto, the dependencies of this approach are lightweight (no dependency on Spring or
+Spring Security):
 
 ```
 de.mkammerer.argon2-playground:argon2-playground:jar:1.0-SNAPSHOT
@@ -13,6 +15,8 @@ de.mkammerer.argon2-playground:argon2-playground:jar:1.0-SNAPSHOT
 |  \- org.slf4j:slf4j-api:jar:1.7.25:runtime
 \- org.slf4j:jcl-over-slf4j:jar:1.7.30:runtime
 ```
+
+See the [main class](src/main/java/de/mkammerer/argon2playground/Main.java) for the password hashing code.
 
 ## License
 
